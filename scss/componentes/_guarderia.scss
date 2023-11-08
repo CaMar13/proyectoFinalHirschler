@@ -151,6 +151,7 @@
     li {
         background-color: $color-principal;
         font-family: $fuente-familia-parrafo;
+        font-size: map-get($fuente, normal);    
         font-weight: 400;
         padding: 03px 30px;
         margin: 15px 100px;

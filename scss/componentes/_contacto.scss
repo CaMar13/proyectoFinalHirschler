@@ -60,15 +60,15 @@
     }
     form {
         background-color: $color-principal;
-        width: 55%;
+        width: 80%;
         max-width: 100%;
         height: auto;
+        margin: 03px 04%;
         padding: 03%;
         /* PANTALLAS TABLET */
         @media screen and (min-width: 768px) and (max-width: 1023px) {
-            width: 90%;
-            margin: 04%;
-            padding: 03px 14%;
+            width: 95%;
+            padding: 03px;
         }
         /* PANTALLA CELULAR */
         @media screen and (min-width: 320px) and (max-width: 767px) {
@@ -78,6 +78,15 @@
             padding: 04%;
         }
         ul {
+            margin: 05px 14%;
+            /* PANTALLAS TABLET */
+            @media screen and (min-width: 768px) and (max-width: 1023px) {
+                width: 77%;
+            }
+            /* PANTALLA CELULAR */
+            @media screen and (min-width: 320px) and (max-width: 767px) {
+                margin: 01%;
+            }
             div {
                 label {
                     font-size: map-get($fuente, large);

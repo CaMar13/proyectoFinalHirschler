@@ -804,6 +804,7 @@ header #logi .tilt-in-top-1 {
 .guard-list li {
   background-color: white;
   font-family: "Rubik", sans-serif;
+  font-size: 19px;
   font-weight: 400;
   padding: 3px 30px;
   margin: 15px 100px;
@@ -1264,18 +1265,18 @@ header #logi .tilt-in-top-1 {
 }
 .formu-con form {
   background-color: white;
-  width: 55%;
+  width: 80%;
   max-width: 100%;
   height: auto;
+  margin: 3px 4%;
   padding: 3%;
   /* PANTALLAS TABLET */
   /* PANTALLA CELULAR */
 }
 @media screen and (min-width: 768px) and (max-width: 1023px) {
   .formu-con form {
-    width: 90%;
-    margin: 4%;
-    padding: 3px 14%;
+    width: 95%;
+    padding: 3px;
   }
 }
 @media screen and (min-width: 320px) and (max-width: 767px) {
@@ -1284,6 +1285,21 @@ header #logi .tilt-in-top-1 {
     margin-top: 3%;
     margin-bottom: 2%;
     padding: 4%;
+  }
+}
+.formu-con form ul {
+  margin: 5px 14%;
+  /* PANTALLAS TABLET */
+  /* PANTALLA CELULAR */
+}
+@media screen and (min-width: 768px) and (max-width: 1023px) {
+  .formu-con form ul {
+    width: 77%;
+  }
+}
+@media screen and (min-width: 320px) and (max-width: 767px) {
+  .formu-con form ul {
+    margin: 1%;
   }
 }
 .formu-con form ul div label {
