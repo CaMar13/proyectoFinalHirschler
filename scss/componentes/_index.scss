@@ -1,0 +1,100 @@
+/*---------------------------
+** PROPIEDADES PAGINA INICIO
+---------------------------*/
+
+/*--------** Seccion: Historia y presentación de GUREUM + imagen-------------*/
+.inicio {
+    @include medida-seccion;
+    /* PANTALLA CELULAR */
+    @media screen and (min-width: 320px) and (max-width: 767px) {
+        width: 99%;
+    }
+}
+
+.inicioA {
+    @include box-estilo (05px, 20px);
+    @include flex(center, center);
+    flex-flow: column wrap;
+    overflow: auto;
+    /* PANTALLA CELULAR */
+    @media screen and (min-width: 320px) and (max-width: 767px) {
+        @include box-estilo (05px, 03px);
+    }
+}
+
+.iniImg img {
+    width: 95%;
+    @include box-estilo (06px, 01%);
+    border: 7px solid $color-tres;
+    border-radius: 17px;
+    /* PANTALLA CELULAR */
+    @media screen and (min-width: 320px) and (max-width: 767px) {
+        @include box-tamano (95%, auto);
+    }
+}
+
+.iniTxt {
+    @include box-estilo (05px, 02%);
+    @include flex(center, center);
+    flex-flow: column wrap;
+    align-content: baseline;
+    overflow: auto;
+    /* PANTALLA CELULAR */
+    @media screen and (min-width: 320px) and (max-width: 767px) {
+        margin: 01%;
+    }
+}
+
+/*--------** Seccion: cards -------------*/
+.ini-servicios {
+    @include medida-seccion;
+    height: auto;
+}
+
+.contenedorCards {
+    @include box-estilo (03px, 01px);
+    @include flex(center, stretch);
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 17px;
+}
+
+
+.card-body {
+    width: 99%;
+    max-width: 100%;
+    font-size: map-get($fuente, smallc);
+    @include flex( none, baseline);
+    flex-direction: column;
+    /* PANTALLA CELULAR */
+    @media screen and (min-width: 320px) and (max-width: 767px) {
+        width: 95%;
+        margin: 02px;
+    }
+}
+
+
+/*--------** Seccion: staff + imagen -------------*/
+.staffA {
+    @include medida-seccion;
+    display: flex;
+    flex-direction: column;
+}
+
+.staffTexto {
+    @include box-estilo (03px, 07px);
+    @include flex(center, center);
+    flex-flow: column wrap;
+    align-content: baseline;
+    overflow: auto;
+}
+.staffImg {
+    width: 100%;
+    max-width: 100%;
+    @include flex(center, baseline);
+    flex-flow: row;
+    flex-wrap: wrap;
+    align-content: center;
+}
+
+

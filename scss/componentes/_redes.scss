@@ -1,0 +1,58 @@
+/*---------------------------
+** PROPIEDADES REDES SOCIALES  
+---------------------------*/
+
+#redesSociales {
+	max-width: 300%;
+	padding: 32px 10px;
+	margin: auto;
+	position: fixed;
+	overflow: hidden;
+	right: -130px;
+	top: 230px;
+	z-index: 1100;
+    /* PANTALLA CELULAR */
+    @media screen and (min-width: 320px) and (max-width: 767px) {
+        @include box-tamano (97%, 60px);
+        padding: 02px;
+        position: static;
+        margin: 04px 02px;
+    }
+    .social {
+        @include box-tamano (41px, 43px);
+        position: fixed;
+        right: 0;
+        float: left;
+        margin: 5px 4px;
+        top: 50%;
+        padding: 0px;
+        cursor: pointer;
+        /* PANTALLA CELULAR */
+        @media screen and (min-width: 320px) and (max-width: 767px) {
+        width: 35%;
+        max-width: 100%;
+        height: auto;
+        padding: 02px;
+        margin: 01px 35%;
+        height: auto;
+        display: flex;
+        flex-direction: row;
+        position: static;
+        }
+    }
+}
+
+
+ion-icon {
+	font-size: 40px;
+	color: $color-cinco;
+	padding: 01px;
+	background: $color-tres;
+	border-radius: 8PX;
+    /* PANTALLA CELULAR */
+    @media screen and (min-width: 320px) and (max-width: 767px) {
+        text-align: center;
+        font-size: 34px;
+        margin: 01px 07px;
+    }
+}

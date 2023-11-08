@@ -1,0 +1,179 @@
+/*---------------------------
+** PROPIEDADES PAGINA CONTACTO
+---------------------------*/
+                /*--------** Seccion: Todas las formas de contacto + imagen -------------*/
+.contac-info {
+    @include medida-seccion;
+    padding: 01px;
+    @include flex(center, center);
+    flex-wrap: wrap;
+    align-content: center;
+    overflow: auto;
+    /* PANTALLAS TABLET */
+    @media screen and (min-width: 768px) and (max-width: 1023px) {
+        width: 97%;
+        margin: 02%;
+        padding: 05%;
+    }
+    /* PANTALLA CELULAR */
+    @media screen and (min-width: 320px) and (max-width: 767px) {
+        width: 97%;
+        margin: 02%;
+    }
+    .contaOpciones {
+        margin: 03px;
+        text-align: center;
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+            /* PANTALLA CELULAR */
+        @media screen and (min-width: 320px) and (max-width: 767px) {
+            ion-icon {
+                margin: 01px;
+                font-size: 27px;
+            }
+            p {
+                font-size: 19px;
+                margin: 01px;
+            }
+        }
+    }
+}
+
+
+.cont-img img {
+    /* PANTALLA CELULAR */
+    @media screen and (min-width: 320px) and (max-width: 767px) {
+        padding: 20px;
+    }
+}
+
+/*--------** Seccion: Formulario de contacto -------------*/
+.formu-con {
+    @include medida-seccion;
+    padding: 07px;
+    @include flex(center, center);
+    flex-direction: column;
+    flex-wrap: wrap;
+    align-content: center;
+    overflow: auto;
+    /* PANTALLAS TABLET */
+    @media screen and (min-width: 768px) and (max-width: 1023px) {
+        width: 97%;
+        padding: 03px 07%;
+    }
+    form {
+        background-color: $color-principal;
+        width: 55%;
+        max-width: 100%;
+        height: auto;
+        padding: 03%;
+        /* PANTALLAS TABLET */
+        @media screen and (min-width: 768px) and (max-width: 1023px) {
+            width: 90%;
+            margin: 03px;
+            padding: 03px 14%;
+        }
+        /* PANTALLA CELULAR */
+        @media screen and (min-width: 320px) and (max-width: 767px) {
+            width: 97%;
+            height: auto;
+            margin-top: 03%;
+            margin-bottom: 02%;
+            padding: 04%;
+        }
+        ul {
+            div {
+                label {
+                    font-size: map-get($fuente, large);
+                    display: block;
+                    float: center;
+                }
+                input {
+                    background-color: $color-cuatro;
+                    @include box-tamano (400px, 40px);
+                    border-radius: 5px;
+                    border-style: solid;
+                    border-width: 1px;
+                    border-color: $color-cinco;
+                    margin: 10px 0px 20px 0px;
+                    padding-left: 10px;
+                    /* PANTALLA CELULAR */
+                    @media screen and (min-width: 320px) and (max-width: 767px) {
+                        width: 98%;
+                        max-width: 100%;
+                        margin: 04px 03px;
+                    }
+                    &:focus{
+                        outline:0;
+                        border: 3px solid #97d848;
+                    }
+                }
+                textarea {
+                    background-color: $color-cuatro;
+                    margin: 07px 0px 20px 0px;
+                    padding: 15px 10px;
+                    border-radius: 5px;
+                    border-style: solid;
+                    border-width: 1px;
+                    border-color: $color-cinco;
+                    /* PANTALLA CELULAR */
+                    @media screen and (min-width: 320px) and (max-width: 767px) {
+                        width: 98%;
+                        max-width: 100%;
+                        margin: 04px 03px;
+                    }
+                    &:focus{
+                        outline:0;
+                        border: 3px solid #97d848;
+                    }
+                }
+            }
+        }
+    }
+}
+
+
+.listaFormulario {
+    /* PANTALLA CELULAR */
+    @media screen and (min-width: 320px) and (max-width: 767px) {
+        @include box-tamano (99%, auto);
+        max-width: 100%;
+        padding: 02px
+    }
+}
+
+
+                /*--------** Seccion: Google Maps con ubicacion-------------*/
+.mapa {
+    @include medida-seccion;
+    @include flex(center, center);
+    flex-direction: column;
+    flex-wrap: wrap;
+    align-content: baseline;
+    overflow: auto;
+        /* PANTALLAS TABLET */
+        @media screen and (min-width: 768px) and (max-width: 1023px) {
+            margin: 02%;
+            padding: 04%;
+        }
+        /* PANTALLA CELULAR */
+        @media screen and (min-width: 320px) and (max-width: 767px) {
+            @include box-tamano (96%, auto);
+            h2 {
+                max-width: 100%;
+                margin: 03px 02px;
+                padding: 06px;
+            }
+        }
+    iframe {
+        margin: 02%;
+        /* PANTALLA CELULAR */
+        @media screen and (min-width: 320px) and (max-width: 767px) {
+            max-width: 100%;
+            margin: 04px 03px;
+            padding: auto;
+        }
+    }
+}
+

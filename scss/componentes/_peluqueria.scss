@@ -1,0 +1,144 @@
+/*---------------------------
+** PROPIEDADES PAGINA PELQUERIA / SPA 
+---------------------------*/
+
+/*--------** Seccion: Introducción del servicio + imagen-------------*/
+.spa-ini {
+    @include medida-seccion;
+    @include flex(center, center);
+    flex-direction: row;
+    align-content: center;
+    overflow: auto;
+    // PANTALLAS CELULAR //
+    @media screen and (min-width: 320px) and (max-width: 767px) { 
+        display: flex;
+        flex-direction: column;
+    }
+    .spa-txtA {
+        width: 50%;
+        @include box-estilo (05px, 17px);
+        @include flex(center, center);
+        flex-direction: column;
+        flex-wrap: wrap;
+        align-content: baseline;
+        overflow: auto;
+        // PANTALLAS TABLET //
+        @media screen and (min-width: 768px) and (max-width: 1023px) {
+            width: 60%;
+        }
+        // PANTALLAS CELULAR //
+        @media screen and (min-width: 320px) and (max-width: 767px) { 
+            width: 97%;
+            @include box-estilo (02px, 03px);
+        }
+    }
+    .spa-imgA {
+        @include flex(center, flex-start);
+        flex-direction: column;
+        flex-wrap: wrap;
+        align-content: center;
+    }
+}
+
+/*--------** Seccion: Lista de los servicios que incluimos-------------*/
+.pelu-list {
+    @include medida-seccion;
+    padding: 02px;
+    margin: 02%;
+    @include flex(center, center);
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-content: center;
+    // PANTALLAS TABLET //
+    @media screen and (min-width: 768px) and (max-width: 1023px) {
+        padding: 02px;
+    }
+    // PANTALLAS CELULAR //
+    @media screen and (min-width: 320px) and (max-width: 767px) { 
+        /*width: 99%;
+        margin: 02px 01px;
+        padding: 02px;*/
+    }
+}
+
+.spa-listB {
+    width: 50%;
+    @include box-estilo (05px, 02px);
+    @include flex(center, center);
+    flex-direction: column;
+    flex-wrap: wrap;
+    align-content: baseline;
+    overflow: auto;
+    // PANTALLAS TABLET //
+    @media screen and (min-width: 768px) and (max-width: 1023px) {
+        width: 70%;
+        @include box-estilo (05px, 02px);
+    }
+    // PANTALLAS CELULAR //
+    @media screen and (min-width: 320px) and (max-width: 767px) { 
+        width: 90%;
+        margin: 03px 01px;
+        padding: 02px 06%;
+    }
+    li {
+        background-color: $color-principal;
+        font-family: $fuente-familia-parrafo;
+        font-size: map-get($fuente, normal);
+        font-weight: 400;
+        padding: 03px 17px;
+        margin: 07px 100px;
+        // PANTALLAS CELULAR //
+        @media screen and (min-width: 320px) and (max-width: 767px) { 
+            background-color: $color-principal;
+            /*font-size: map-get($fuente, smallb);*/
+            @include box-estilo (03px, 10px);
+        }
+    }
+}
+
+.spa-imgB {
+    @include flex(center, flex-start);
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-content: center;
+    // PANTALLAS TABLET //
+    @media screen and (min-width: 768px) and (max-width: 1023px) {
+        margin: 01%;
+    }
+}
+
+
+/*--------** Seccion: Recordatorio final de que se debe reservar una cita-------------*/
+.pelu-cita {
+    @include box-tamano (50%, auto);
+    padding: 04px;
+    margin: 02% 27%;
+    // PANTALLAS CELULAR //
+    @media screen and (min-width: 320px) and (max-width: 767px) { 
+        @include box-tamano (93%, auto);
+        padding: 03px;
+        margin: 03% 04%;
+    }
+    p {
+        background-color: $color-cuatro;
+    }
+}
+
+#carouselExample {
+    width: 35%;
+    height: auto;
+    margin: 02% 33%;
+    // PANTALLAS TABLET //
+    @media screen and (min-width: 768px) and (max-width: 1023px) {
+        width: 43%;
+        height: auto;
+        margin: 02% 30%;
+    }
+    // PANTALLAS CELULAR //
+    @media screen and (min-width: 320px) and (max-width: 767px) { 
+        width: 90%;
+        height: auto;
+        margin: 02% 05%;
+    }
+}
+
