@@ -107,7 +107,6 @@
 }
 
 .hospe-citatxt {
-    background-color: $color-cuatro;
     width: 50%;
     @include box-estilo (05px, 10px);
     @include flex(center, center);
@@ -131,6 +130,7 @@
 
 .hospe-citaimg {
     margin: 03px;
+    height: auto;
     @include flex(center, flex-start);
     flex-wrap: wrap;
     align-content: center;

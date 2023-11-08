@@ -138,12 +138,12 @@
     overflow: auto;
     /* PANTALLA CELULAR */
     @media screen and (min-width: 320px) and (max-width: 767px) {
-        width: 97%;
         padding: 02px;
     }
 }
 
 .guard-list {
+    background-color: orange;
     @include box-estilo (05px, 02px);
     position: static;
     @include flex(center, center);
@@ -152,9 +152,9 @@
     overflow: auto;
     /* PANTALLA CELULAR */
     @media screen and (min-width: 320px) and (max-width: 767px) {
-        width: 97%;
-        margin: 02px 01px;
-        padding: 02px;
+        width: 90%;
+        margin: 03px 01px;
+        padding: 02px 03%;
     }
     li {
         background-color: white;
@@ -169,9 +169,9 @@
         }
             /* PANTALLA CELULAR */
         @media screen and (min-width: 320px) and (max-width: 767px) {
-            font-size: map-get($fuente, smallb);
-            padding: 03px;
-            margin: 14px;
+            background-color: $color-principal;
+            font-size: map-get($fuente, smallc);
+            @include box-estilo (03px, 14px);
         }
     }
 }

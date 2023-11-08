@@ -184,7 +184,7 @@ h1 {
 }
 @media screen and (min-width: 320px) and (max-width: 767px) {
   h1 {
-    font-size: 15px;
+    font-size: 19px;
   }
 }
 
@@ -200,6 +200,7 @@ h2, h3 {
 }
 @media screen and (min-width: 320px) and (max-width: 767px) {
   h2, h3 {
+    background-color: yellow;
     font-size: 17px;
   }
 }
@@ -792,12 +793,12 @@ header #logi .tilt-in-top-1 {
 }
 @media screen and (min-width: 320px) and (max-width: 767px) {
   .gua-extratx {
-    width: 97%;
     padding: 2px;
   }
 }
 
 .guard-list {
+  background-color: orange;
   padding: 5px;
   margin: 2px;
   position: static;
@@ -811,9 +812,9 @@ header #logi .tilt-in-top-1 {
 }
 @media screen and (min-width: 320px) and (max-width: 767px) {
   .guard-list {
-    width: 97%;
-    margin: 2px 1px;
-    padding: 2px;
+    width: 90%;
+    margin: 3px 1px;
+    padding: 2px 3%;
   }
 }
 .guard-list li {
@@ -833,7 +834,8 @@ header #logi .tilt-in-top-1 {
 }
 @media screen and (min-width: 320px) and (max-width: 767px) {
   .guard-list li {
-    font-size: 15px;
+    background-color: white;
+    font-size: 17px;
     padding: 3px;
     margin: 14px;
   }
@@ -994,7 +996,6 @@ header #logi .tilt-in-top-1 {
 }
 
 .hospe-citatxt {
-  background-color: whitesmoke;
   width: 50%;
   padding: 5px;
   margin: 10px;
@@ -1025,6 +1026,7 @@ header #logi .tilt-in-top-1 {
 
 .hospe-citaimg {
   margin: 3px;
+  height: auto;
   display: flex;
   justify-content: center;
   align-items: flex-start;
@@ -1182,6 +1184,7 @@ header #logi .tilt-in-top-1 {
   height: auto;
   padding: 4px;
   margin: 2% 27%;
+  background-color: rgb(242, 212, 226);
 }
 @media screen and (min-width: 320px) and (max-width: 767px) {
   .pelu-cita {
@@ -1192,7 +1195,7 @@ header #logi .tilt-in-top-1 {
   }
 }
 .pelu-cita p {
-  background-color: whitesmoke;
+  background-color: rgb(242, 212, 226);
 }
 
 #carouselExample {

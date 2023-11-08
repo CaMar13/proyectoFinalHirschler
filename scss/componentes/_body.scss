@@ -109,7 +109,7 @@ h1 {
     @include box-estilo (01%, 01%);
     // PANTALLA CELULAR //
     @media screen and (min-width: 320px) and (max-width: 767px) {
-        font-size: map-get($fuente, smallb);
+        font-size: map-get($fuente, normal);
     }
 }
 
@@ -124,6 +124,7 @@ h2, h3 {
     @include box-estilo (02px, 01%);
     // PANTALLAS CELULAR //
     @media screen and (min-width: 320px) and (max-width: 767px) { 
+        background-color: yellow;
         font-size: map-get($fuente, smallc);    
     }
 }
