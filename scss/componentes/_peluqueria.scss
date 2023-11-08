@@ -49,16 +49,6 @@
     flex-direction: row;
     flex-wrap: wrap;
     align-content: center;
-    // PANTALLAS TABLET //
-    @media screen and (min-width: 768px) and (max-width: 1023px) {
-        padding: 02px;
-    }
-    // PANTALLAS CELULAR //
-    @media screen and (min-width: 320px) and (max-width: 767px) { 
-        /*width: 99%;
-        margin: 02px 01px;
-        padding: 02px;*/
-    }
 }
 
 .spa-listB {
@@ -72,7 +62,6 @@
     // PANTALLAS TABLET //
     @media screen and (min-width: 768px) and (max-width: 1023px) {
         width: 70%;
-        @include box-estilo (05px, 02px);
     }
     // PANTALLAS CELULAR //
     @media screen and (min-width: 320px) and (max-width: 767px) { 
@@ -90,7 +79,6 @@
         // PANTALLAS CELULAR //
         @media screen and (min-width: 320px) and (max-width: 767px) { 
             background-color: $color-principal;
-            /*font-size: map-get($fuente, smallb);*/
             @include box-estilo (03px, 10px);
         }
     }
@@ -113,7 +101,7 @@
     @include box-tamano (50%, auto);
     padding: 04px;
     margin: 02% 27%;
-    background-color: rgb(242, 212, 226);
+    background-color: $color-cuatro;
     // PANTALLAS CELULAR //
     @media screen and (min-width: 320px) and (max-width: 767px) { 
         @include box-tamano (93%, auto);
@@ -121,7 +109,7 @@
         margin: 03% 04%;
     }
     p {
-        background-color: rgb(242, 212, 226);
+        background-color: $color-cuatro;
     }
 }
 
@@ -132,13 +120,11 @@
     // PANTALLAS TABLET //
     @media screen and (min-width: 768px) and (max-width: 1023px) {
         width: 43%;
-        height: auto;
         margin: 02% 30%;
     }
     // PANTALLAS CELULAR //
     @media screen and (min-width: 320px) and (max-width: 767px) { 
         width: 90%;
-        height: auto;
         margin: 02% 05%;
     }
 }

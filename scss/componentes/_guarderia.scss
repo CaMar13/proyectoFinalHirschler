@@ -19,9 +19,9 @@
     }
     /* PANTALLA CELULAR */
     @media screen and (min-width: 320px) and (max-width: 767px) {
-            width: 97%;
-            height: auto;
-            padding: 02px;
+        width: 97%;
+        height: auto;
+        padding: 02px;
     }
 }
 
@@ -32,7 +32,6 @@
     /* PANTALLAS TABLET */
     @media screen and (min-width: 768px) and (max-width: 1023px) {
         width: 75%;
-        margin: 10px;
     }
     /* PANTALLA CELULAR */
     @media screen and (min-width: 320px) and (max-width: 767px) {
@@ -72,10 +71,6 @@
     flex-wrap: wrap;
     align-content: center;
     overflow: auto;
-    /* PANTALLAS TABLET */
-    @media screen and (min-width: 768px) and (max-width: 1023px) {
-        padding: 10px;
-    }
     /* PANTALLA CELULAR */
     @media screen and (min-width: 320px) and (max-width: 767px) {
         padding: 02px;
@@ -88,7 +83,6 @@
     /* PANTALLAS TABLET */
     @media screen and (min-width: 768px) and (max-width: 1023px) {
         width: 85%;
-        margin: 10px;
     }
     /* PANTALLA CELULAR */
     @media screen and (min-width: 320px) and (max-width: 767px) {
@@ -143,7 +137,6 @@
 }
 
 .guard-list {
-    background-color: orange;
     @include box-estilo (05px, 02px);
     position: static;
     @include flex(center, center);
@@ -152,13 +145,12 @@
     overflow: auto;
     /* PANTALLA CELULAR */
     @media screen and (min-width: 320px) and (max-width: 767px) {
-        width: 90%;
         margin: 03px 01px;
         padding: 02px 03%;
     }
     li {
-        background-color: white;
-        font-family: 'Rubik', sans-serif;
+        background-color: $color-principal;
+        font-family: $fuente-familia-parrafo;
         font-weight: 400;
         padding: 03px 30px;
         margin: 15px 100px;

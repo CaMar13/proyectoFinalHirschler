@@ -200,8 +200,7 @@ h2, h3 {
 }
 @media screen and (min-width: 320px) and (max-width: 767px) {
   h2, h3 {
-    background-color: yellow;
-    font-size: 17px;
+    font-size: 19px;
   }
 }
 
@@ -216,15 +215,9 @@ p {
   padding: 7px;
   margin: 4px;
 }
-@media screen and (min-width: 768px) and (max-width: 1023px) {
-  p {
-    font-size: 19px;
-  }
-}
 @media screen and (min-width: 320px) and (max-width: 767px) {
   p {
     font-size: 17px;
-    padding: 7px;
     margin: 1px;
   }
 }
@@ -334,6 +327,7 @@ nav #btn, nav #cancel {
     z-index: 1100;
     position: fixed;
     top: 80px;
+    bottom: 80px;
     left: -100%;
     text-align: center;
     transition: all 0.7s;
@@ -459,7 +453,9 @@ ion-icon {
 }
 @media screen and (min-width: 320px) and (max-width: 767px) {
   .inicio {
-    width: 99%;
+    width: 97%;
+    height: auto;
+    padding: 2px 0px;
   }
 }
 
@@ -490,7 +486,6 @@ ion-icon {
 }
 @media screen and (min-width: 320px) and (max-width: 767px) {
   .iniImg img {
-    width: 95%;
     height: auto;
   }
 }
@@ -522,7 +517,7 @@ ion-icon {
 
 .contenedorCards {
   padding: 3px;
-  margin: 1px;
+  margin: 5px;
   display: flex;
   justify-content: center;
   align-items: stretch;
@@ -543,7 +538,6 @@ ion-icon {
 }
 @media screen and (min-width: 320px) and (max-width: 767px) {
   .card-body {
-    width: 95%;
     margin: 2px;
   }
 }
@@ -661,7 +655,6 @@ header #logi .tilt-in-top-1 {
 @media screen and (min-width: 768px) and (max-width: 1023px) {
   .guarde-txta {
     width: 75%;
-    margin: 10px;
   }
 }
 @media screen and (min-width: 320px) and (max-width: 767px) {
@@ -704,13 +697,7 @@ header #logi .tilt-in-top-1 {
   flex-wrap: wrap;
   align-content: center;
   overflow: auto;
-  /* PANTALLAS TABLET */
   /* PANTALLA CELULAR */
-}
-@media screen and (min-width: 768px) and (max-width: 1023px) {
-  .guarde-02 {
-    padding: 10px;
-  }
 }
 @media screen and (min-width: 320px) and (max-width: 767px) {
   .guarde-02 {
@@ -727,7 +714,6 @@ header #logi .tilt-in-top-1 {
 @media screen and (min-width: 768px) and (max-width: 1023px) {
   .guarde-txtb {
     width: 85%;
-    margin: 10px;
   }
 }
 @media screen and (min-width: 320px) and (max-width: 767px) {
@@ -798,7 +784,6 @@ header #logi .tilt-in-top-1 {
 }
 
 .guard-list {
-  background-color: orange;
   padding: 5px;
   margin: 2px;
   position: static;
@@ -812,7 +797,6 @@ header #logi .tilt-in-top-1 {
 }
 @media screen and (min-width: 320px) and (max-width: 767px) {
   .guard-list {
-    width: 90%;
     margin: 3px 1px;
     padding: 2px 3%;
   }
@@ -1108,18 +1092,6 @@ header #logi .tilt-in-top-1 {
   flex-wrap: wrap;
   align-content: center;
 }
-@media screen and (min-width: 768px) and (max-width: 1023px) {
-  .pelu-list {
-    padding: 2px;
-  }
-}
-@media screen and (min-width: 320px) and (max-width: 767px) {
-  .pelu-list {
-    /*width: 99%;
-    margin: 02px 01px;
-    padding: 02px;*/
-  }
-}
 
 .spa-listB {
   width: 50%;
@@ -1136,8 +1108,6 @@ header #logi .tilt-in-top-1 {
 @media screen and (min-width: 768px) and (max-width: 1023px) {
   .spa-listB {
     width: 70%;
-    padding: 5px;
-    margin: 2px;
   }
 }
 @media screen and (min-width: 320px) and (max-width: 767px) {
@@ -1158,7 +1128,6 @@ header #logi .tilt-in-top-1 {
 @media screen and (min-width: 320px) and (max-width: 767px) {
   .spa-listB li {
     background-color: white;
-    /*font-size: map-get($fuente, smallb);*/
     padding: 3px;
     margin: 10px;
   }
@@ -1206,14 +1175,12 @@ header #logi .tilt-in-top-1 {
 @media screen and (min-width: 768px) and (max-width: 1023px) {
   #carouselExample {
     width: 43%;
-    height: auto;
     margin: 2% 30%;
   }
 }
 @media screen and (min-width: 320px) and (max-width: 767px) {
   #carouselExample {
     width: 90%;
-    height: auto;
     margin: 2% 5%;
   }
 }
@@ -1238,14 +1205,12 @@ header #logi .tilt-in-top-1 {
 }
 @media screen and (min-width: 768px) and (max-width: 1023px) {
   .contac-info {
-    width: 97%;
-    margin: 2%;
     padding: 5%;
+    margin: 2%;
   }
 }
 @media screen and (min-width: 320px) and (max-width: 767px) {
   .contac-info {
-    width: 97%;
     margin: 2%;
   }
 }
@@ -1294,7 +1259,6 @@ header #logi .tilt-in-top-1 {
 }
 @media screen and (min-width: 768px) and (max-width: 1023px) {
   .formu-con {
-    width: 97%;
     padding: 3px 7%;
   }
 }
@@ -1310,14 +1274,13 @@ header #logi .tilt-in-top-1 {
 @media screen and (min-width: 768px) and (max-width: 1023px) {
   .formu-con form {
     width: 90%;
-    margin: 3px;
+    margin: 4%;
     padding: 3px 14%;
   }
 }
 @media screen and (min-width: 320px) and (max-width: 767px) {
   .formu-con form {
     width: 97%;
-    height: auto;
     margin-top: 3%;
     margin-bottom: 2%;
     padding: 4%;
@@ -1329,7 +1292,7 @@ header #logi .tilt-in-top-1 {
   float: center;
 }
 .formu-con form ul div input {
-  background-color: whitesmoke;
+  background-color: rgb(242, 212, 226);
   width: 400px;
   height: 40px;
   border-radius: 5px;
@@ -1352,7 +1315,7 @@ header #logi .tilt-in-top-1 {
   border: 3px solid #97d848;
 }
 .formu-con form ul div textarea {
-  background-color: whitesmoke;
+  background-color: rgb(242, 212, 226);
   margin: 7px 0px 20px 0px;
   padding: 15px 10px;
   border-radius: 5px;
@@ -1418,14 +1381,12 @@ header #logi .tilt-in-top-1 {
   }
 }
 .mapa iframe {
-  margin: 2%;
+  margin: 3% 1%;
   /* PANTALLA CELULAR */
 }
 @media screen and (min-width: 320px) and (max-width: 767px) {
   .mapa iframe {
     max-width: 100%;
-    margin: 4px 3px;
-    padding: auto;
   }
 }
 
